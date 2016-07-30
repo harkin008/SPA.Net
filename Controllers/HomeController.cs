@@ -113,5 +113,8 @@ namespace SPA_AngularJs.Controllers
 
             return View();
         }
+		public void doNothing(){
+			
+		}
     }
 }
