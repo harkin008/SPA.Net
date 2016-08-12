@@ -1,0 +1,118 @@
+﻿
+@{
+    ViewBag.Title = "Login";
+}
+ 
+    <form name="loginForm" novalidate ng-controller="loginCtr" ng-cloak style="padding-top:10%">
+    <div>
+
+        <div class="col-md-12">
+            <div class="col-md-4">
+
+            </div>
+
+
+            <div class="col-md-4" ng-cloak ng-init="showlogin=false">
+
+
+                <div class="loginBorder bottom" ng-hide="showLogin" id="loginDiv">
+                    <h3 class="h3_login">Login</h3>
+                    <div>
+                        <label>Username</label>
+                        <input type="text" id="txtUserName" ng-model="tbUserName" class="form-control" required />
+                    </div>
+
+                    <div>
+                        <label>Password</label>
+                        <input type="text" id="txtPassword" ng-model="tbPassword" class="form-control" required />
+                    </div>
+                    <div style="padding-top: 5%;">
+                        <input type="submit" id="tbSubmutLogin" value="Login" ng-click="submitLogin()" class="btn btn-primary" />
+                    </div>
+                    <div>
+                        <br />
+
+                        <a ng-click="regNewUser()">New? Register</a>
+                        @* <input type="" id="btnSumitRegister" value="Login" ng-click="submitRegister()" class="btn btn-primary" />*@
+                    </div>
+
+
+                </div>
+
+
+
+                <div>
+                    <a ng-click="homeClk()" id="btnHome"> Home </a>
+                </div>
+
+                @*<div class="svgArrow-down">
+                        <svg style="width:40px;height:40px" viewBox="0 0 49 40">
+                            <path fill="#000000" d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z" />
+                        </svg>
+                    </div>*@
+            </div>
+
+            <div class="col-md-4">
+
+
+                <div class="loginBorder bottom" id="regForm" ng-show="showLogin">
+                    @*<div class="col-md-5 loginBorder">*@
+                    <h3 class="h3_login">Register</h3>
+                    <div>
+                        <label> First Name </label>
+                        <input type="text" ng-model="tbFirstName" class="form-control" />
+
+                    </div>
+                    <div>
+                        <label> Last Name </label>
+                        <input type="text" ng-model="tbLastName" class="form-control" />
+
+                    </div>
+                    <div>
+                        <label> Username </label>
+                        <input type="text" ng-model="tbRegUserName" class="form-control" />
+
+                    </div>
+                    <div>
+                        <label> E-Mail  </label>
+                        <input type="text" ng-model="tbEmail" class="form-control" />
+
+                    </div>
+                    <div>
+                        <label> Password </label>
+                        <input type="text" ng-model="tbRegPassword" class="form-control" />
+
+                    </div>
+                    <div>
+                        <label> Confirm Password  </label>
+                        <input type="text" ng-model="tbConfPassword" class="form-control" />
+
+                    </div>
+
+                    <div style="padding-top:5%">
+                        <input type="submit" id="btnSumitRegister" value="Register" ng-click="submitRegister()" class="btn btn-primary" />
+                    </div>
+                    <div>
+                        <br />
+                        <a ng-click="backToLogin()"> Back to login </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+
+
+    @*<div>
+            <i class="material-icons.md-36"><ng-md-icon icon="keyboard_arrow_down"></ng-md-icon></i>
+
+        </div>*@
+
+</form>
+
+
+

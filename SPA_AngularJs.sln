@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SPA_AngularJs", "SPA_AngularJs\SPA_AngularJs.csproj", "{41687C35-E5B2-4EF2-B4D7-6096B263F49A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{B88C739C-2BFF-41C8-A0D2-BABC16840A80}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{41687C35-E5B2-4EF2-B4D7-6096B263F49A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{41687C35-E5B2-4EF2-B4D7-6096B263F49A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{41687C35-E5B2-4EF2-B4D7-6096B263F49A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{41687C35-E5B2-4EF2-B4D7-6096B263F49A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
